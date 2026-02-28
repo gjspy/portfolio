@@ -1,0 +1,13 @@
+[Unit]
+Description=Python Portfolio Site
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/user/prices
+ExecStart=/home/user/prices/.venv/bin/uvicorn --host 127.0.0.1 --port 8001 server:app
+Restart=always
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=default.target

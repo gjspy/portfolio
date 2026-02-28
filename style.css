@@ -1,0 +1,134 @@
+:root {
+	font-family: Roboto, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	text-wrap-style: balance;
+}
+
+h1 {
+	font-size: 3em;
+	font-family: Roboto, sans-serif;
+	font-weight: 900;
+	line-height: 1;
+}
+
+
+h2 {
+	font-family: "Playpen Sans", cursive;
+	font-optical-sizing: auto;
+	font-weight: 800;
+	font-style: normal;
+}
+
+h3 {
+	font-size: 1.2em;
+	font-family: Roboto, sans-serif;
+	font-weight: 375;
+	line-height: 1;
+}
+
+
+
+p, a {
+	font-size: 1em;
+	font-family: Roboto, sans-serif;
+	font-weight: 300;
+	line-height: 1;
+
+	text-decoration: none;
+	color: unset;
+}
+
+a:hover[href] {
+	text-decoration: underline;
+}
+
+label, input, legend {
+	font-size: 0.8em;
+	font-family: Roboto, sans-serif;
+	font-weight: 400;
+}
+
+label {
+	user-select: none;
+}
+
+li {
+	list-style: none;
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	padding-inline: 0;
+	border: 0;
+	background: transparent;
+	box-sizing: border-box;
+
+	scrollbar-width: thin;
+	scrollbar-color: var(--accent-1) rgba(0, 0, 0, 0);
+}
+
+input:focus {
+	outline: none;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+	
+	margin: 10vh 20vw;
+}
+
+a.button {
+	background-color: #1f54ff;
+	color: #fff;
+	font-weight: 800;
+	border-radius: 4px;
+
+	width: fit-content;
+	font-size: 2em;
+	padding: 0.2em;
+
+	align-self: flex-end;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+
+	width: 100%;
+}
+
+
+section header img {
+	vertical-align: middle;
+	height: 7em;
+}
+
+section header h1 {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+section div.if {
+	width: calc(1920px * 0.3125);
+	height: calc(1080px * 0.3125);
+	overflow: hidden;
+	
+	align-self: center;
+
+	border: 4px solid black;
+	border-radius: 10px;
+}
+
+section iframe {
+	width: 1920px;
+	height: 1080px;
+	transform: scale(0.3125);
+	transform-origin: top left;
+}
